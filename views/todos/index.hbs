@@ -1,0 +1,11 @@
+<h1>Todos</h1>
+<ul class="list-group">
+  {{#each todos}}
+  <li class="list-group-item d-flex justify-content-between">
+    <div>{{this.title}}</div>
+    <div class="links">
+      <a href="/todos/{{this.id}}" class="btn btn-info">View</a>
+    </div>
+  </li>
+  {{/each}}
+</ul>
