@@ -8,12 +8,12 @@ const mongoURI =
 
 mongoose
     .connect(mongoURI,
-        {
-            useNewUrlParser: true,
-            useCreateIndex: true,
-            useUnifiedTopology: true,
-            useFindAndModify: false,
-        }
+        // {
+        //     useNewUrlParser: true,
+        //     useCreateIndex: true,
+        //     useUnifiedTopology: true,
+        //     useFindAndModify: false,
+        // }
         )
     .then( (instance) => 
         console.log(`Connected to db: ${instance.connections[0].name}`)
