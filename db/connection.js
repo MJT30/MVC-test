@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 const mongoURI = 
     process.env.NODE_ENV === 'production'
         ? process.env.DB_URL
-        : `mongodb+srv://MylesT913:test@cluster0.yniju.mongodb.net/mvc2?retryWrites=true&w=majority`
+        : process.env.DEV_DB_URL
 
 mongoose
     .connect(mongoURI,
